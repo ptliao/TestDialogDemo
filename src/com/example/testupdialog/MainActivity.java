@@ -1,5 +1,6 @@
 package com.example.testupdialog;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -14,12 +15,17 @@ import android.view.WindowManager;
 
 /**
  * 测试修改
+ * 
+ * 
+ * 增加新东西啦
+ * 
  */
 public class MainActivity extends Activity {
     
     
     private AlertDialog mDialog;
 
+    @SuppressLint("InlinedApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,13 +52,11 @@ public class MainActivity extends Activity {
             
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
                 showAgePickerDialog();
             }
         });
     }
-    
-    
+
     // 显示单位的上滑菜单
     private void showAgePickerDialog() {
 
@@ -65,7 +69,7 @@ public class MainActivity extends Activity {
         mDialog.show();
 
         window.setContentView(R.layout.unit_picker);
-        
+
     }
 
 }
