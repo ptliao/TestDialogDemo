@@ -12,6 +12,9 @@ import android.view.ViewGroup.LayoutParams;
 import android.view.Window;
 import android.view.WindowManager;
 
+/**
+ * 测试修改
+ */
 public class MainActivity extends Activity {
     
     
